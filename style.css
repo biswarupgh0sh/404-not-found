@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+
+/*font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+header h2{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    padding: 20px;
+}
+.content-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-img img{
+    width: 539px;
+    height: 447px;
+    margin-left: 60px;
+}
+.content-info h1{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 64px;
+    width: 586px;
+    height: 190px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    margin-right: 119px;
+}
+.content-info p{
+    margin-top: 10px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    width: 381px;
+    height: 108px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+
+}
+.content-info button{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 24px 43px;
+    margin-top: 65px;
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+footer{
+    margin-top: 140px;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 15px;
+}
+@media screen and (max-width: 480px) {
+    body{
+        height: 150vh;
+    }
+    .content-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content-img img{
+        width: 286px;
+        height: 238px;
+    }
+    .content-info{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-info h1{
+        width: 350px;
+        height: 142px;
+        font-size: 48px;
+    }
+    .content-info p{
+        margin-top: 55px;
+        width: 328px;
+        height: 81px;
+        font-size: 18px;
+    }
+    .content-info button{
+        width: 216px;
+        height: 68px;
+        padding: inherit;
+    }
+    footer{
+        padding-top: 55px;
+    }
+}
